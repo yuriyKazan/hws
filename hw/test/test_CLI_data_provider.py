@@ -1,7 +1,6 @@
 import unittest
 import sys
 
-
 from hw.core.CLI_data_provider import CLIDataProvider
 
 
