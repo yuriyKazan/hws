@@ -3,8 +3,8 @@ import os
 import sys
 import unittest
 
-from hw.core.CLI_data_provider import CLIDataProvider
-from hw.core.phone_book import PhoneBook
+from task2.core.CLI_data_provider import CLIDataProvider
+from task2.core.phone_book import PhoneBook
 
 
 def get_data_from_file(file_name):

@@ -1,7 +1,7 @@
 from os import path
 
-from hw.core.data_provider import DataProvider
-from hw.core.messages import PhoneBookMessages
+from task2.core.data_provider import DataProvider
+from task2.core.messages import PhoneBookMessages
 
 
 class Validator:

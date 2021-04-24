@@ -1,7 +1,7 @@
 import unittest
 import sys
 
-from hw.core.CLI_data_provider import CLIDataProvider
+from task2.core.CLI_data_provider import CLIDataProvider
 
 
 class TestCLIDataProvider(unittest.TestCase):

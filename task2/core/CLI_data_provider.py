@@ -1,6 +1,6 @@
 import sys
 
-from hw.core.data_provider import DataProvider
+from task2.core.data_provider import DataProvider
 
 
 class CLIDataProvider(DataProvider):
