@@ -1,6 +1,7 @@
 import unittest
 import sys
-
+import os
+print(os.getcwd())
 from hw.core.CLI_data_provider import CLIDataProvider
 
 
