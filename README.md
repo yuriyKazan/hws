@@ -14,6 +14,7 @@ python -m task1.test.test_boss
 There are next test suites:
 1)test_boss
 2)test_worker
+
 ---
 #### Task2
 To run all tests for task2 use the next command:
