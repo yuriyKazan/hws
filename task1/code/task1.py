@@ -44,19 +44,3 @@ class Worker:
 
     def __str__(self):
         return f'Instance of Worker class. ID:{self.id}; Name:{self.name}; Company:{self.company};'
-
-
-# worker_id = random.randint(1, 1000)
-# boss_id = random.randint(1, 1000)
-# w = Worker(worker_id, 'Some name', 'Some company')
-# w.boss = Boss(boss_id, 'A name', 'A company')
-# print(w, w.boss.id, w.boss.name)
-# del w.boss
-# print(w, w.boss)
-# b = Boss(random.randint(1, 1000), 'A name', 'A company')
-# w.boss = b
-# b.add_worker(w)
-# print(b)
-# w2 = Worker(random.randint(1, 1000), 'Some name2', 'Some company2')
-# w2.boss = Boss(random.randint(1, 1000), 'A name', 'A company')
-# b.add_worker(w2)
