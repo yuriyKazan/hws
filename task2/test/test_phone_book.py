@@ -113,3 +113,7 @@ class TestPhoneBook(unittest.TestCase):
 
     def tearDown(self):
         write_data_to_file(dict(), TestPhoneBook.__file_example)
+
+
+if __name__ == '__main__':
+    unittest.main()

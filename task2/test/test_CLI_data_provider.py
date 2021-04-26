@@ -26,3 +26,7 @@ class TestCLIDataProvider(unittest.TestCase):
     def tearDownClass(cls):
         if len(sys.argv) > 1:
             sys.argv.pop(1)
+
+
+if __name__ == '__main__':
+    unittest.main()
