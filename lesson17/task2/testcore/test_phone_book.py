@@ -3,8 +3,8 @@ import os
 import sys
 import unittest
 
-from task2.core.CLI_data_provider import CLIDataProvider
-from task2.core.phone_book import PhoneBook
+from ..core.CLI_data_provider import CLIDataProvider
+from ..core.phone_book import PhoneBook
 
 
 def get_data_from_file(file_name):
@@ -44,7 +44,7 @@ class TestPhoneBook(unittest.TestCase):
         self.assertEqual(data, TestPhoneBook.__mock_data2, f'Expected and actual data are not equal')
 
     def test_initialise_book(self):
-        test_file = 'test.json'
+        test_file = 'testcode.json'
         if not os.path.exists(test_file):
             with open(test_file, "w") as file:
                 json.dump(dict(), file)

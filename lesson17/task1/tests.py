@@ -1,7 +1,7 @@
 import unittest
 
-from task1.test.test_boss import TestBoss
-from task1.test.test_worker import TestWorker
+from .testcode.test_boss import TestBoss
+from .testcode.test_worker import TestWorker
 
 
 def run_all():

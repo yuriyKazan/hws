@@ -1,6 +1,6 @@
 import unittest
 
-from task1.code.task1 import Boss, Worker
+from ..code.task1 import Boss, Worker
 
 
 class TestWorker(unittest.TestCase):

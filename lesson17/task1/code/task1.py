@@ -1,6 +1,3 @@
-import random
-
-
 class Boss:
     def __init__(self, id_: int, name: str, company: str):
         self.id = id_

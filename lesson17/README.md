@@ -1,15 +1,15 @@
 #### Task1
 To run all tests for task1 use the next command:
 ```
-python -m task1.tests
+python -m lesson17.task1.tests
 ```
 To run separate tests suites use the next command:
 ```
-python -m task1.test.'test_suite'
+python -m lesson17.task1.testcode.'test_suite'
 ```
 where test_suite is a name of the test suite you want to run e.g.
 ```
-python -m task1.test.test_boss
+python -m lesson17.task1.testcode.test_boss
 ```
 There are next test suites:
 1)test_boss
@@ -19,15 +19,15 @@ There are next test suites:
 #### Task2
 To run all tests for task2 use the next command:
 ```
-python -m task2.tests
+python -m lesson17.task2.tests
 ```
 To run separate tests suites use the next command:
 ```
-python -m task2.test.'test_suite'
+python -m lesson17.task2.testcore.'test_suite'
 ```
 where test_suite is a name of the test suite you want to run e.g.
 ```
-python -m task2.test.test_validator
+python -m lesson17.task2.testcore.test_validator
 ```
 There are next test suites:
 1)test_CLI_data_provider

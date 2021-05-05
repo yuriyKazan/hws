@@ -1,8 +1,8 @@
 import sys
 import unittest
 
-from task2.core.CLI_data_provider import CLIDataProvider
-from task2.core.validator import Validator
+from ..core.CLI_data_provider import CLIDataProvider
+from ..core.validator import Validator
 
 
 class TestValidator(unittest.TestCase):

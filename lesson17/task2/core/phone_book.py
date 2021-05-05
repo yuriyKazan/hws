@@ -1,7 +1,7 @@
 import json
 from os import stat
 
-from task2.core.data_provider import DataProvider
+from ..core.data_provider import DataProvider
 
 
 class PhoneBook:

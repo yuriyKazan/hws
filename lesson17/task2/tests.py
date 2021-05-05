@@ -1,8 +1,8 @@
 import unittest
 
-from task2.test.test_CLI_data_provider import TestCLIDataProvider
-from task2.test.test_phone_book import TestPhoneBook
-from task2.test.test_validator import TestValidator
+from .testcore.test_CLI_data_provider import TestCLIDataProvider
+from .testcore.test_phone_book import TestPhoneBook
+from .testcore.test_validator import TestValidator
 
 
 def run_all():
