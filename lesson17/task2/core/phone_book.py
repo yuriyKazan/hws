@@ -47,11 +47,11 @@ class PhoneBook:
         return phonebook_data.get(full_name, None)
 
     @staticmethod
-    def search_by_phone_number(phonebook_data: dict, phone_number: str) -> str:
+    def search_by_phone_number(phonebook_data: dict, phone_number: str) -> Union[str, None]:
         return PhoneBook.get_key_of_record_by_value(phonebook_data, phone_number, 'number')
 
     @staticmethod
-    def search_by_city(phonebook_data, city: str) -> str:
+    def search_by_city(phonebook_data, city: str) -> Union[str, None]:
         return PhoneBook.get_key_of_record_by_value(phonebook_data, city, 'city')
 
     @staticmethod
