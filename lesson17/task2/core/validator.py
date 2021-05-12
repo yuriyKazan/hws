@@ -7,7 +7,7 @@ from ..core.messages import PhoneBookMessages
 class Validator:
 
     @staticmethod
-    def check_phonebook_presence(data_provider: DataProvider):
+    def check_phonebook_presence(data_provider: DataProvider) -> bool:
         if path.exists(data_provider.get_argument()):
             return True
         else:
@@ -15,7 +15,7 @@ class Validator:
             return False
 
     @staticmethod
-    def check_arguments(data_provider: DataProvider):
+    def check_arguments(data_provider: DataProvider) -> bool:
         if data_provider.get_argument():
             if Validator.check_phonebook_presence(data_provider):
                 return True

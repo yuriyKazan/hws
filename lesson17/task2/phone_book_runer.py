@@ -1,3 +1,5 @@
+from typing import Union
+
 from core.data_provider import DataProvider
 from core.CLI_data_provider import CLIDataProvider
 from core.messages import PhoneBookMessages
@@ -5,14 +7,14 @@ from core.phone_book import PhoneBook
 from core.validator import Validator
 
 
-def get_phonebook_name(data_provider: DataProvider):
+def get_phonebook_name(data_provider: DataProvider) -> Union[str, None]:
     if Validator.check_arguments(data_provider):
         return data_provider.get_argument()
     return None
 
 
-def search_item(phonebook: PhoneBook, phonebook_data):
-    state = ""
+def search_item(phonebook: PhoneBook, phonebook_data) -> None:
+    state: str = ""
     print(PhoneBookMessages.OPTIONS_TO_SEARCH.value)
     while state != "stop":
         state = input("Select a search option: ")
@@ -35,8 +37,8 @@ def search_item(phonebook: PhoneBook, phonebook_data):
                   f' "{key_of_record}": {phonebook_data.get(key_of_record, None)}')
 
 
-def process_notebook_operations(phonebook: PhoneBook, phonebook_data):
-    state = ""
+def process_notebook_operations(phonebook: PhoneBook, phonebook_data) -> None:
+    state: str = ""
     while state != "stop":
         state = input("Select an option: ")
         if state not in ['a', 's', 'd', 'u', 'stop']:
@@ -59,8 +61,8 @@ def process_notebook_operations(phonebook: PhoneBook, phonebook_data):
             print(phonebook_data)
 
 
-def get_input(input_name: str):
-    input_value = ''
+def get_input(input_name: str) -> str:
+    input_value: str = ''
     if 'full_name' == input_name:
         input_value = input('Enter full name: ')
     elif 'phone_number' == input_name:
@@ -70,7 +72,7 @@ def get_input(input_name: str):
     return input_value
 
 
-def process_notebook_flow():
+def process_notebook_flow() -> None:
     data_provider = CLIDataProvider()
     phonebook_file_name = get_phonebook_name(data_provider)
     if phonebook_file_name is None:

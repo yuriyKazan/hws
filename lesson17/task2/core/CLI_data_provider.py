@@ -5,10 +5,10 @@ from ..core.data_provider import DataProvider
 
 class CLIDataProvider(DataProvider):
 
-    __argument = ''
+    __argument: str = ''
 
     @staticmethod
-    def read_cli_argument():
+    def read_cli_argument() -> str:
         try:
             CLIDataProvider.__argument = sys.argv[1]
         except IndexError:
@@ -16,5 +16,5 @@ class CLIDataProvider(DataProvider):
         return CLIDataProvider.__argument
 
     @staticmethod
-    def get_argument():
+    def get_argument() -> str:
         return CLIDataProvider.read_cli_argument()
